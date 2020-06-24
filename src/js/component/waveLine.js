@@ -57,8 +57,8 @@
 
                 ang = Math.atan2(ty - fy, tx - fx),
                 distance = Math.sqrt((fx - tx) * (fx - tx) + (fy - ty) * (fy - ty)),
-                amplitude = -5,
-                f = Math.PI * distance / 15;
+                amplitude = -4,
+                f = Math.PI * distance / 10;
 
             for (i; i <= distance; i += step) {
                 waveOffsetLength = Math.sin((i / distance) * f) * amplitude;
